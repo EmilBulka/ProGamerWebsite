@@ -1,0 +1,470 @@
+@import 'animation';
+@import 'colors';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-padding-top: 82px;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-color;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $main-color;
+}
+
+.blue-text {
+    color: $main-color;
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+nav {
+    text-transform: uppercase;
+    transition: background-color .6s;
+    z-index: 1;
+
+    a,
+    i {
+        color: $white;
+    }
+
+    a:hover {
+        color: $main-color;
+    }
+
+    .fa-bars {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .active {
+        color: $main-color;
+    }
+}
+
+
+
+
+header {
+    color: $white;
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/header-mini.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+
+    .hero-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -10;
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        z-index: 5;
+    }
+
+    .btn-outline-light {
+        text-transform: uppercase;
+    }
+
+    .fa-chevron-down {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        font-size: 30px;
+        color: $white;
+    }
+
+}
+
+
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-card-title {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .aboutus-card-text {
+        font-size: 14px;
+    }
+
+    .aboutus-hover:hover {
+        color: $main-color;
+    }
+}
+
+.aboutus-hero {
+    position: relative;
+    background-image: url('../img/about-hero-small.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $light-gray;
+    z-index: 0;
+
+    .aboutus-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -5;
+    }
+
+    .aboutus-hero-item {
+        margin: 10px 0;
+
+        i {
+            font-size: 36px;
+        }
+
+        .aboutus-hero-title {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.portfolio {
+    .carousel-item {
+        height: 600px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+
+        background-color: rgba(0, 0, 0, .8);
+
+    }
+
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+.tariff {
+
+    h3 {
+
+        border: 0;
+        border-bottom: 2px;
+        border-style: solid;
+        border-color: $bg-color;
+        padding: 0 5px 0 5px;
+        color: $main-color;
+
+    }
+
+
+    .order {
+        font-family: arial;
+        padding: 5px 15px 5px 15px;
+        background-color: $light-gray;
+        transition: 0.3s;
+        border-radius: 5%;
+
+    }
+
+    .order:hover {
+        background-color: $main-color;
+    }
+
+    .text {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .bold {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+
+    .content {
+        font-weight: bold;
+    }
+
+    .contact {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .price-box {
+        box-shadow: 5px 5px 5px grey;
+        background-color: $white;
+        padding: 30px;
+        transition: 0.3s;
+    }
+
+    .price-box:hover {
+
+        padding: 45px;
+
+    }
+
+
+}
+
+
+#team {
+
+
+    h2 {
+
+        margin-top: 40px;
+        color: $light-gray;
+
+    }
+
+
+    .hero-bcg {
+        height: 85vh;
+        width: 100%;
+        background-image: url("../img/team/conference-room-768441_1920.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+
+
+
+        .hero-shadow {
+            background-color: rgba(0, 0, 0, .7);
+
+            height: 100%;
+            width: 100%;
+
+        }
+
+    }
+
+
+
+    
+    .card {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 6px 0 6px;
+        transition: transform .3s;
+       
+
+        p {
+            min-height: 150px;
+        }
+
+        img {
+            height: 300px;
+            object-fit: cover;
+
+        }
+
+        i {
+            padding: 10px;
+        }
+
+        .card-title {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+    }
+
+
+    .card:hover {
+
+        transform: scale(.96);
+
+    }
+
+
+}
+
+
+.achievements {
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    i {
+        color: $white;
+        padding: 10px;
+        font-size: 48px;
+        text-shadow: 0 0 5px #000;
+        
+    }
+
+    i:hover{
+        color:$main-color;
+
+    }
+}
+
+
+
+
+.contact-box {
+
+    position: relative;
+
+    background-image: url('/img/skyline-1869214_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    padding-bottom: 30px;
+
+    color: $white;
+
+    h2 {
+        
+        padding-top: 40px;
+        color: white;
+        z-index: 10;
+    }
+
+    h3{
+        text-transform:uppercase;
+    }
+
+    .contact-shadow {
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: 5;
+
+    }
+
+    .contact-item {
+
+        z-index: 10;
+
+        i {
+            color: $white;
+        }
+
+    }
+
+    .social-media{
+        font-size: 26px;
+
+        a{
+            padding: 10px;
+            text-decoration: none;
+
+        }
+        a:hover{
+            color: $light-gray;
+        }
+        
+    }
+
+    i:hover{
+        color: $main-color;
+        
+    }
+}
+
+@media(min-width: 375px) {
+    header {
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+@media(min-width: 768px) {
+    header {
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    html {
+        height: 82px;
+    }
+
+    .aboutus-hero {
+        background-image: url('../img/about-hero-big.jpg');
+    }
+}
+
+@media(min-width: 1200px) {
+    header {
+        .hero-img {
+            background-image: url('../img/header-big.jpg');
+        }
+    }
+}
